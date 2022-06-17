@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  gap: 50px 30px;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFF;
+  padding: 10px;
+}
+
+.grid-item25 {
+  background-color: #FFFF;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.grid-item1346 {
+    background-color: #FFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .photo > img {
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .photo > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+  }
