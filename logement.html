@@ -1,93 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-div.container {
-    width: 100%;
-    border: 1px solid gray;
-}
-
-header, footer {
-    padding: 1em;
-    color: white;
-    background-color: black;
-    clear: left;
-    text-align: left;
-}
- 
-nav {
-    float: left;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
-}
- 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-    
-nav ul a {
-    text-decoration: none;
-}
- 
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-}
-
-    body {
-        background-image: url("images/cle-sur-porte.jpg");
-    }
-
-</style>
+    <title>LOGEMENTS</title>
+    <script src="js/header.js"></script>
 </head>
+
 <body>
- 
-<div class="container">
- 
-<header>
-   <h1>LOGEMENT</h1>
-</header>
+    <header-component></header-component>
 
-<nav>
-    <ul>
-      <li><a href="accueil.html">ACCUEIL</a></li>
-      <li><a href="#">LOGEMENT</a></li>
-     
-    </ul>
-  </nav>
-   
+<main-header></main-header>
 
- 
-<article>
+<p>
   <h2>HÉBERGEMENT ÉTUDIANTE</h2>
   <p><h3>CROUS:</p></h3>
-  <h4>Bourges</h4><h4><span style="color: #ff6600">Bourges nord</span></h4>
+  <p></p><h4>Bourges</h4></p>
+      <h4><span style="color: green">Bourges nord</span></h4>
   <ul>
     <li><a title="Les Gibjoncs" href="https://www.location-etudiant.fr/detail-crous-les-gibjoncs-bourges-73.html">Les Gibjoncs</a></li>
     </ul>
-    <h4><span style="color: #ff6600">Bourges centre</span></h4>
+    <h4><span style="color: green">Bourges centre</span></h4>
     <ul>
     <li><a title="Hôtel Dieu" href="https://www.location-etudiant.fr/detail-crous-hotel-dieu-bourges-72.html">Hôtel Dieu</a></li>
     <li><a title="Amaryllis" href="https://www.location-etudiant.fr/detail-crous-amaryllis-bourges-74.html">Amaryllis</a></li>
     <li><a title="Marie Curie" href="https://www.location-etudiant.fr/detail-crous-marie-curie-bourges-75.html">Marie Curie</a></li>
     </ul>
-    <h2>PLATEFORMES D'HÉBERGEMENT</h2>
-   
+    <h3>PLATEFORMES D'HÉBERGEMENT</h3>
+
     <ul>
         <li><a title="LOGEMENTS À BOURGES" href="https://www.avendrealouer.fr/location/bourges-18/b-appartement/loc-101-7858.html">Avendrealouer</a></li>
         <li><a title="LOGEMENTS À BOURGES" href="https://www.bienici.com/recherche/location/bourges-18000?camera=8_2.0591379_47.6275668_0.9_0">Bien ici</a></li>
         <li><a title="LOGEMENTS À BOURGES" href="https://www.citya.com/annonces/location/appartement/bourges-18000?gclid=EAIaIQobChMIyamlk-63-AIVGNZ3Ch0R_gAwEAAYAiAAEgJbrPD_BwE">Citya</a></li>
         <li><a title="LOGEMENTS À BOURGES" href="https://www.fnaim.fr/liste-annonces-immobilieres/18-location-appartement-bourges-18000.htm?TRANSACTION=2&localites=%5B%7B%22id%22%3A14641%2C%22type%22%3A3%2C%22label%22%3A%22BOURGES+(18000)%22%2C%22insee%22%3A%2218033%22%7D%5D&TYPE%5B%5D=1&NB_PIECES%5B%5D=&NB_PIECES%5B%5D=&SURFACE%5B%5D=&SURFACE%5B%5D=&PRIX%5B%5D=&PRIX%5B%5D=&NB_CHAMBRES%5B%5D=&NB_CHAMBRES%5B%5D=&SURFACE_TERRAIN%5B%5D=&SURFACE_TERRAIN%5B%5D=&op=CEN_VTE_PRIX_VENTE+asc%2CTRI_PRIX+asc%2CCEN_MDT_DTE_CREATION+desc&cp=d41d8cd98f00b204e980&mp=11&lat=47.077782581079&lng=2.3977419999999987&zoom=12">Fnaim</a></li>
 
-</article>
- 
-<footer>BIENVENUE À BOURGES</footer>
- 
-</div>
- 
+
+</p>
+
+<main-footer></main-footer>
 </body>
 </html>
