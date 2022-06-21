@@ -88,8 +88,14 @@ class Header extends HTMLElement {
                           <div class="navbar-nav mr-auto py-0">
                               <a href="accueil.html" class="nav-item nav-link active">Accueil</a>
                               <a href="about.html" class="nav-item nav-link">À propos de nous</a>
-                              <a href="discussion.html" class="nav-item nav-link">Discussion</a>
-                              <a href="http://localhost/projet_d-application/contact.php" class="nav-item nav-link">Nous contacter</a>
+                              <div class="nav-item dropdown">
+                                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                  <div class="dropdown-menu rounded-0 m-0">
+                                      <a href="blog.html" class="dropdown-item">Latest Blog</a>
+                                      <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                  </div>
+                              </div>
+                              <a href="contact.html" class="nav-item nav-link">Nous contacter</a>
                           </div>
                           <a href="connexion.html" class="btn btn-primary mr-3 d-none d-lg-block"><b>Connexion</b></a>
                           <a href="ouvrir_compte.html" class="btn btn-primary mr-3 d-none d-lg-block"><b>Ouvrir un compte</b></a>

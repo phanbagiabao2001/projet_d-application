@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['user'])) {
+		header("location:accueil.html");
+	}
+
+?>
+
 <!doctype html>
 <html>
 	<head>
@@ -89,10 +97,12 @@
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="http://localhost/app/discussion.php" class="dropdown-item">Discussion</a>
+                                    <a href="blog.html" class="dropdown-item">Dicussion</a>
                                     <a href="single.html" class="dropdown-item">Blog Detail</a>
                                 </div>
                             </div> -->
+                            <!-- <a href="localhost/app/discussion.php" class="nav-item nav-link">Discussion</a> -->
+
                             <a href="contact.html" class="nav-item nav-link">Nous contacter</a>
                         </div>
                         <a href="http://localhost/app/php/login.php" class="btn btn-primary mr-3 d-none d-lg-block"><b>Connexion</b></a>
@@ -189,91 +199,15 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-    <h2 class="scintillement" style="text-align:center">Découvrons Bourges</h2>
-    <div class="row">
-        <div class="column">
-          <a href="#">
-            <div class="container1">
-                <a href="scolarite.html"> 
-                    <img src="images/scolarite.png" class="image">
-                    <div class="overlay1">
-                        <div class="text">Scolarité</div>
-                    </div>
-                </a>
-              </div>
-          </a>
-        </div>
-
-        <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="procedures_administratives.html"> 
-                      <img src="images/administrations.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Procédures administratives</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-          </div>
-
-          <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="logement.html"> 
-                      <img src="images/logement.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Logement</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-            </div>
-        <div class="row">
-          <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="transportation.html"> 
-                      <img src="images/transport.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Transportation</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-          </div>
-       
-
-        <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="association_eleves.html"> 
-                      <img src="images/association.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Association élèves</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-          </div>
-
-          <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="loisirs.html"> 
-                      <img src="images/loisir.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Loisirs</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-          </div>
-        </div>
+    <h2>  </h2>
+    <h2 style="text-align:center">Écrivez vos commentaires ici</h2>
+    
+    <div class="container-md text-center">
+        <form action="dis_submit.php" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;" >
+            <textarea name="post" id="" cols="100" rows="5"></textarea>
+            <button type = "submit" name="submit" class="btn btn-primary"> Submit </button>
+        </form>
     </div>
-    </div>
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="row pt-5">

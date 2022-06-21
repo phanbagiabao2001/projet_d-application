@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['user'])) {
+		header("location:accueil.html");
+	}
+
+?>
+
 <!doctype html>
 <html>
 	<head>
@@ -93,10 +101,11 @@
                                     <a href="single.html" class="dropdown-item">Blog Detail</a>
                                 </div>
                             </div> -->
+                            <a href="discussion.php" class="nav-item nav-link">Discussion</a>
                             <a href="contact.html" class="nav-item nav-link">Nous contacter</a>
                         </div>
-                        <a href="http://localhost/app/php/login.php" class="btn btn-primary mr-3 d-none d-lg-block"><b>Connexion</b></a>
-                        <a href="http://localhost/app/php/register.php" class="btn btn-primary mr-3 d-none d-lg-block"><b>Ouvrir un compte</b></a>
+                        <a href="http://localhost/app/php/logout.php"class="btn btn-primary mr-3 d-none d-lg-block"><b>Déconnexion</b></a>
+                        <a href="" class="btn btn-primary mr-3 d-none d-lg-block"><b>Gérer mon compte</b></a>
                     </div>
                 </nav>
             </div>
