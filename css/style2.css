@@ -10046,10 +10046,10 @@ h6,
 
 .portfolio-item .portfolio-text {
   position: absolute;
-  width: 100%;
+  width: 50%;
   height: 100%;
-  top: -100%;
-  left: 0;
+  left: -100%;
+  top: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10057,8 +10057,13 @@ h6,
   transition: .5s;
 }
 
+.portfolio-text h4 {
+  margin: 50px;
+  text-align: justify;
+}
+
 .portfolio-item:hover .portfolio-text {
-  top: 0;
+  left: 0%;
 }
 
 .team .team-img {
