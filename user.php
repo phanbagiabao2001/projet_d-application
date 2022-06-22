@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['user'])) {
+		header("location:accueil.html");
+	}
+
+?>
+
 <!doctype html>
 <html>
 	<head>
@@ -86,11 +94,18 @@
                         <div class="navbar-nav mr-auto py-0">
                             <a href="accueil.html" class="nav-item nav-link active">Accueil</a>
                             <a href="about.html" class="nav-item nav-link">À propos de nous</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="http://localhost/app/discussion.php" class="dropdown-item">Discussion</a>
+                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                </div>
+                            </div> -->
                             <a href="http://localhost/projet_d-application/posts_add.php" class="nav-item nav-link">Discussion</a>
                             <a href="http://localhost/projet_d-application/contact.php" class="nav-item nav-link">Nous contacter</a>
                         </div>
-                        <a href="http://localhost/projet_d-application/php/login.php" class="btn btn-primary mr-3 d-none d-lg-block"><b>Connexion</b></a>
-                        <a href="http://localhost/projet_d-application/php/register.php" class="btn btn-primary mr-3 d-none d-lg-block"><b>Ouvrir un compte</b></a>
+                        <a href="http://localhost/app/php/logout.php"class="btn btn-primary mr-3 d-none d-lg-block"><b>Déconnexion</b></a>
+                        <a href="" class="btn btn-primary mr-3 d-none d-lg-block"><b>Gérer mon compte</b></a>
                     </div>
                 </nav>
             </div>
