@@ -10058,6 +10058,10 @@ h6,
 }
 
 .portfolio-text h3, h4 {
+<<<<<<< HEAD
+=======
+  margin: 50px;
+>>>>>>> 01eff2a99c2660f917959233dd0b23edf86b001d
   text-align: justify;
 }
 
