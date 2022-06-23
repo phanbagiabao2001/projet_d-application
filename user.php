@@ -104,7 +104,7 @@
                             <a href="http://localhost/projet_d-application/posts_add.php" class="nav-item nav-link">Discussion</a>
                             <a href="http://localhost/projet_d-application/contact.php" class="nav-item nav-link">Nous contacter</a>
                         </div>
-                        <a href="http://localhost/app/php/logout.php"class="btn btn-primary mr-3 d-none d-lg-block"><b>Déconnexion</b></a>
+                        <a href="http://localhost/projet_d-application/php/logout.php"class="btn btn-primary mr-3 d-none d-lg-block"><b>Déconnexion</b></a>
                         <a href="" class="btn btn-primary mr-3 d-none d-lg-block"><b>Gérer mon compte</b></a>
                     </div>
                 </nav>

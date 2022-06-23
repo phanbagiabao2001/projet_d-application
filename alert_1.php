@@ -114,46 +114,11 @@
 
     
 <h2 style="text-align:center"></h2>
-        <h3 style="text-align:center" >Écrire un nouveau post ici! </h3>
-          <div id="wrapper">
-      
+        <h3 style="text-align:center" >Vous devez faire connexion avant de poster!</h3>
+        <h4 style="text-align:center" ><a href="http://localhost/projet_d-application/posts_add.php"> Revenir </a></h4>
+        
 
-            <div class="container">  
-
-              <div class = "row justify-content-center">
-
-
-
-                  <form action="posts_add.php" enctype="multipart/form-data" method="post" class="form">
-                    <table width="600" border="2" cellspacing="5" cellpadding="5">
-                      <tr>
-                        <td width="230">Titre </td>
-                        <td width="329"><input type="text" name="title"/></td>
-                      </tr>
-                      <!-- <tr>
-                        <td>Lien</td>
-                        <td><input type="text" name="url"/></td>
-                      </tr> -->
-                        <tr>
-                          <td>Contennu </td>
-                          <td><textarea name="content" id="content" placeholder="Écrire ici..." class="noidung" rows="5" cols="80"></textarea></td>
-                        </tr>
-                        <tr>
-                          <td>Image</td>
-                          <td><input type="hidden" name="size" value="1000000">
-                          <input type="file" name="image" class="hinhanh"><br/><br/></td>
-                        </tr>
-                        <tr>
-                          <td colspan="2" align="center"><input type="submit" name="btn_submit" value="Publier"/></td>
-                        </tr>
-                  </table>
-                </form>
-              </div>
-            </div>
-          </div>
-<h2 class="text-center" >Contenu de discussion</h2>
-
-<?php require 'posts_xuly.php';?>
+          
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">

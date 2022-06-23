@@ -1,10 +1,11 @@
 <?php
 	session_start();
-	if ( !isset($_SESSION['user']) and !isset($_SESSION['admin']) )   {
+	if (!isset($_SESSION['admin'])) {
 		header("location:accueil.html");
 	}
 
 ?>
+
 <!doctype html>
 <html>
 	<head>
@@ -113,47 +114,174 @@
     <!-- Header End -->
 
     
-<h2 style="text-align:center"></h2>
-        <h3 style="text-align:center" >Écrire un nouveau post ici! </h3>
-          <div id="wrapper">
-      
+	<div class="colorlib-loader"></div>
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+		</nav>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(images/img_bg_1.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>Bienvenue à Bourges</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/img_bg_2.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>Bienvenue à INSA Centre Val de Loire (Bourges)</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/img_bg_3.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluids">
+			   			<div class="row">
+				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+				   				<div class="slider-text-inner text-center">
+                                    <h1>Ville de Bourges</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/img_bg_4.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+				   				<div class="slider-text-inner text-center">
+                                    <h1>Perdu à Bourges</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>	   	
+			  	</ul>
+		  	</div>
+		</aside>
+    	
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Date Picker -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
 
-            <div class="container">  
-
-              <div class = "row justify-content-center">
-
-
-
-                  <form action="posts_add.php" enctype="multipart/form-data" method="post" class="form">
-                    <table width="600" border="2" cellspacing="5" cellpadding="5">
-                      <tr>
-                        <td width="230">Titre </td>
-                        <td width="329"><input type="text" name="title"/></td>
-                      </tr>
-                      <!-- <tr>
-                        <td>Lien</td>
-                        <td><input type="text" name="url"/></td>
-                      </tr> -->
-                        <tr>
-                          <td>Contennu </td>
-                          <td><textarea name="content" id="content" placeholder="Écrire ici..." class="noidung" rows="5" cols="80"></textarea></td>
-                        </tr>
-                        <tr>
-                          <td>Image</td>
-                          <td><input type="hidden" name="size" value="1000000">
-                          <input type="file" name="image" class="hinhanh"><br/><br/></td>
-                        </tr>
-                        <tr>
-                          <td colspan="2" align="center"><input type="submit" name="btn_submit" value="Publier"/></td>
-                        </tr>
-                  </table>
-                </form>
+    <h2 class="scintillement" style="text-align:center">Découvrons Bourges</h2>
+    <div class="row">
+        <div class="column">
+          <a href="#">
+            <div class="container1">
+                <a href="scolarite.html"> 
+                    <img src="images/scolarite.png" class="image">
+                    <div class="overlay1">
+                        <div class="text">Scolarité</div>
+                    </div>
+                </a>
               </div>
-            </div>
-          </div>
-<h2 class="text-center" >Contenu de discussion</h2>
+          </a>
+        </div>
 
-<?php require 'posts_xuly.php';?>
+        <div class="column">
+            <a href="#">
+              <div class="container1">
+                  <a href="procedures_administratives.html"> 
+                      <img src="images/administrations.png" class="image">
+                      <div class="overlay1">
+                          <div class="text">Procédures administratives</div>
+                      </div>
+                  </a>
+                </div>
+            </a>
+          </div>
+
+          <div class="column">
+            <a href="#">
+              <div class="container1">
+                  <a href="logement.html"> 
+                      <img src="images/logement.png" class="image">
+                      <div class="overlay1">
+                          <div class="text">Logement</div>
+                      </div>
+                  </a>
+                </div>
+            </a>
+            </div>
+        <div class="row">
+          <div class="column">
+            <a href="#">
+              <div class="container1">
+                  <a href="transportation.html"> 
+                      <img src="images/transport.png" class="image">
+                      <div class="overlay1">
+                          <div class="text">Transportation</div>
+                      </div>
+                  </a>
+                </div>
+            </a>
+          </div>
+       
+
+        <div class="column">
+            <a href="#">
+              <div class="container1">
+                  <a href="association_eleves.html"> 
+                      <img src="images/association.png" class="image">
+                      <div class="overlay1">
+                          <div class="text">Association élèves</div>
+                      </div>
+                  </a>
+                </div>
+            </a>
+          </div>
+
+          <div class="column">
+            <a href="#">
+              <div class="container1">
+                  <a href="loisirs.html"> 
+                      <img src="images/loisir.png" class="image">
+                      <div class="overlay1">
+                          <div class="text">Loisirs</div>
+                      </div>
+                  </a>
+                </div>
+            </a>
+          </div>
+        </div>
+    </div>
+    </div>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
@@ -210,8 +338,3 @@ Ses habitants sont appelés les Berruyers.</p>
     </body> 
 
 </html>
-
-
-
-
-

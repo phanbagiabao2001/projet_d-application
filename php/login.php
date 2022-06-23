@@ -45,8 +45,8 @@
                         <tr >
                             <td  colspan = "3">
                                 <button type = "submit" name="submit" class="btn btn-primary"> Connexion </button>
-                                <a href="http://localhost/app/pass_forget.php" button type= "submit" name="forget"class="btn btn-primary" >Mot de pas oublié</a></button>
-                                <a href="http://localhost/app/php/register.php" button type= "submit" name="register"class="btn btn-primary" >Ourvrir un compte?</a></button>
+                                <a href="http://localhost/projet_d-application/php/pass_forget.php" button type= "submit" name="forget"class="btn btn-primary" >Mot de pas oublié</a></button>
+                                <a href="http://localhost/projet_d-application/php/register.php" button type= "submit" name="register"class="btn btn-primary" >Ourvrir un compte?</a></button>
 
 
                             </td>

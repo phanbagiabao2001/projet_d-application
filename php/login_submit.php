@@ -13,11 +13,19 @@
         $old = mysqli_query($conn,$sql);
         $user = mysqli_query($conn, $sql);
 
+  
 
-        if (mysqli_num_rows($user)>0){
-            $_SESSION["user"] = $username;
-            header("location:../user.php");
+        
 
+        if (mysqli_num_rows($user)>0){                                                                                                                                                                                            
+            if ( $username == 'admin' ){
+                header("location:../admin.php"); 
+                $_SESSION["admin"] = $username;  
+            }else {
+                header("location:../user.php");
+                $_SESSION["user"] = $username;
+
+            }
         }else {
             header("location:login.php");
             $_SESSION["alert"] = "Nom d'utilisateur ou mot de pass est incorrect!";
