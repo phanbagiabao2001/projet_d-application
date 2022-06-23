@@ -43,7 +43,7 @@ class Header extends HTMLElement {
       <div class="container-fluid">
           <div class="row">
               <div class="col-lg-3 bg-secondary d-none d-lg-block">
-                  <a href="Accueil.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-end">
+                  <a href="accueil.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-end">
                       <img src="images/logo_bourges.png" width="110" height="150" >
                       <h1 class="m-0 display-3 text-primary">BOURGES</h1>
                   </a>
