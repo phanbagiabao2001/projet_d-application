@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['user'])) {
+		header("location:accueil.html");
+	}
+
+?>
+
 <!doctype html>
 <html>
 	<head>
@@ -41,7 +49,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 bg-secondary d-none d-lg-block">
-                <a href="accueil.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                <a href="Accueil.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                     <img src="images/logo_bourges.png" width="110" height="150" >
                     <h1 class="m-0 display-3 text-primary">BOURGES</h1>
                 </a>
@@ -56,24 +64,24 @@
                         </div>
                         <div class="h-100 d-inline-flex align-items-center py-2 px-2">
                             <i class="fa fa-phone-alt text-primary1 mr-2"></i>
-                            <b>+33 2 48 48 40 00</b>
+                            <b>02 48 48 40 00</b>
                         </div>
                     </div>
                     <div class="col-lg-5 text-right">
                         <div class="d-inline-flex align-items-center pr-2">
-                            <a class="text-primary1 p-2" href="https://www.facebook.com/insacvl">
+                            <a class="text-primary1 p-2" href="">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a class="text-primary1 p-2" href="https://twitter.com/insacvl">
+                            <a class="text-primary1 p-2" href="">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a class="text-primary1 p-2" href="https://www.linkedin.com/school/institut-national-des-sciences-appliqu%C3%A9es-centre-val-de-loire/">
+                            <a class="text-primary1 p-2" href="">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a class="text-primary1 p-2" href="https://www.instagram.com/insacvl/">
+                            <a class="text-primary1 p-2" href="">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a class="text-primary1 p-2" href="https://www.youtube.com/channel/UCcsvLP_cA0WbA8Evg--mlVA">
+                            <a class="text-primary1 p-2" href="">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -85,11 +93,19 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="accueil.html" class="nav-item nav-link active">Accueil</a>
+                            <a href="about.html" class="nav-item nav-link">À propos de nous</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="http://localhost/app/discussion.php" class="dropdown-item">Discussion</a>
+                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                </div>
+                            </div> -->
                             <a href="http://localhost/projet_d-application/posts_add.php" class="nav-item nav-link">Discussion</a>
                             <a href="http://localhost/projet_d-application/contact.php" class="nav-item nav-link">Nous contacter</a>
                         </div>
-                        <a href="http://localhost/projet_d-application/php/login.php" class="btn btn-primary mr-3 d-none d-lg-block"><b>Connexion</b></a>
-                        <a href="http://localhost/projet_d-application/php/register.php" class="btn btn-primary mr-3 d-none d-lg-block"><b>Ouvrir un compte</b></a>
+                        <a href="http://localhost/app/php/logout.php"class="btn btn-primary mr-3 d-none d-lg-block"><b>Déconnexion</b></a>
+                        <a href="" class="btn btn-primary mr-3 d-none d-lg-block"><b>Gérer mon compte</b></a>
                     </div>
                 </nav>
             </div>
@@ -244,7 +260,7 @@
                   <a href="association_eleves.html"> 
                       <img src="images/association.png" class="image">
                       <div class="overlay1">
-                          <div class="text">Associations élèves</div>
+                          <div class="text">Association élèves</div>
                       </div>
                   </a>
                 </div>
@@ -286,21 +302,20 @@ Ses habitants sont appelés les Berruyers.</p>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="font-weight-semi-bold text-primary1 mb-4">Entrer en contact</h4>
                 <p><i class="fa fa-map-marker-alt text-primary1 mr-2"></i>88 Bd Lahitolle, 18000 Bourges, France</p>
-                <p><i class="fa fa-phone-alt text-primary1 mr-2"></i>+33 248 48 40 00</p>
-                <p><i class="fa fa-envelope text-primary1 mr-2"></i>ba_gia_bao.phan@insa-cvl.fr</p>
+                <p><i class="fa fa-phone-alt text-primary1 mr-2"></i>02 48 48 40 00</p>
+                <p><i class="fa fa-envelope text-primary1 mr-2"></i>info@example.com</p>
                 <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-light btn-social mr-2" href="https://twitter.com/insacvl"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/insacvl"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/school/institut-national-des-sciences-appliqu%C3%A9es-centre-val-de-loire/"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-light btn-social" href="https://www.instagram.com/insacvl/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="font-weight-semi-bold text-primary1 mb-4">Liens rapides</h4>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Accueil</a>
-                    <a class="text-white mb-2" href="discussion.html"><i class="fa fa-angle-right mr-2"></i>Discussion</a>
-                    <a class="text-white" href="http://localhost/projet_d-application/contact.php"><i class="fa fa-angle-right mr-2"></i>Nous contacter</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Nous contacter</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
