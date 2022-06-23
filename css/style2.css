@@ -10057,7 +10057,7 @@ h6,
   transition: .5s;
 }
 
-.portfolio-text h4 {
+.portfolio-text h3, h4 {
   margin: 50px;
   text-align: justify;
 }
