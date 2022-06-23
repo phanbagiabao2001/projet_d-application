@@ -10,76 +10,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Ouvrir un compte</title>
 </head>
-<<<<<<< HEAD
-<body style="background-image: url(../images/img_bg_2.jpg)" >
-    <h3 class="text-center"> Ouvrir un compte </h3>
-    
-    <div id="wrapper">
-        <p>
-            <?php
-                if (  isset($_SESSION["alert"])   ) {
-                    echo $_SESSION["alert"];
-                    session_unset();
-                }
-            ?>
-        </p>
-=======
 <body  style="background-image: url(../images/bg.jpg); background-size: cover;background-repeat:no-repeat; height:100vh; " >
     <h3 class="text-center"> Ouvrir un compte </h3>
     
     <div id="wrapper">
         
 
->>>>>>> f6899127ebcc0827e09de86d1303f14096dc9260
         <div class="container">  
             <div class = "row justify-content-around ">
                 <form action="register_submit.php" class="col-md-auto bg-light p-3 "  method = "POST">
                 <table>
-<<<<<<< HEAD
-                    <tr>
-                        <!-- <td>Nom</td> -->
-                        <td><input type="text" name="Nom" placeholder="Nom" ></td>
-                    </tr> 
-                    
-                    <tr>
-                        <!-- <td>Prénom</td> -->
-                        <td><input type="text" name="prenom" placeholder="Prénom"></td>
-                    </tr>
-               
-                    Sexe         
-                    <input name="gender" type="radio" value="Masculin" />Masculin
-                    <input name="gender" type="radio" value="Féminin" />Féminin
-                    <input name="gender" type="radio" value="Autre" />Autre
-               
-                    </tr>
-
-
-                    <tr>
-                        <!-- <td>User</td> -->
-                        <td><input type="text" name="username" placeholder="Nom d'utilisateur" ></td>
-                    </tr>
-             
-                    <tr>
-                        <!-- <td>Password</td> -->
-                        <td><input type="password" name="pass1" placeholder="Mot de pass" ></td>
-                    </tr>
-                  
-                    <tr>
-                        <!-- <td>Confirmation of password</td> -->
-                        <td><input type="password" name="pass2" placeholder="Confirmation de mot de pass" ></td>
-                    </tr>
-               
-
-                    <tr>
-                        <!-- <td>Email</td> -->
-                        <td><input type="text" name="email" placeholder="Email" > </td>
-                    </tr>
-                
-                    <tr>
-                        <!-- <td>Nationalité</td> -->
-                        <td><input type="text" name="nal" placeholder="Nationalité" ></td>
-                    </tr>
-=======
                 Sexe         
                     <input name="gender" type="radio" value="Masculin" /> Masculin
                     <input name="gender" type="radio" value="Féminin" /> Féminin
@@ -116,7 +56,6 @@
                         <label for="login">Nationalité</label>
                         <input type="text"  class="form-control" name="nal" placeholder="Nationalité" >
                     </div>                
->>>>>>> f6899127ebcc0827e09de86d1303f14096dc9260
                 
                     <tr>
                         <td colspan = "2">
@@ -126,17 +65,6 @@
                     </tr>
                 </table>
                 </form>
-<<<<<<< HEAD
-=======
-                <h2 class="text-center text-danger text-folder " >           
-                 <?php
-                if (  isset($_SESSION["alert"])   ) {
-                    echo $_SESSION["alert"];
-                    session_unset();
-                }
-                ?>
-                </h2>
->>>>>>> f6899127ebcc0827e09de86d1303f14096dc9260
             </div>
         </div>
 
