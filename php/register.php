@@ -21,9 +21,9 @@
                 <form action="register_submit.php" class="col-md-auto bg-light p-3 "  method = "POST">
                 <table>
                 Sexe         
-                    <input name="gender" type="radio" value="Masculin" />Masculin
-                    <input name="gender" type="radio" value="Féminin" />Féminin
-                    <input name="gender" type="radio" value="Autre" />Autre
+                    <input name="gender" type="radio" value="Masculin" /> Masculin
+                    <input name="gender" type="radio" value="Féminin" /> Féminin
+                    <input name="gender" type="radio" value="Autre" /> Autre
                     <div class="mb-3">
                         <label for="login">Nom</label>
                         <input type="text"  class="form-control" name="Nom" placeholder="Nom" >

@@ -92,7 +92,7 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="accueil.html" class="nav-item nav-link active">Accueil</a>
-                            <a href="about.html" class="nav-item nav-link">À propos de nous</a>
+                              
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                 <div class="dropdown-menu rounded-0 m-0">
@@ -152,7 +152,7 @@ Ses habitants sont appelés les Berruyers.</p>
                 <h4 class="font-weight-semi-bold text-primary1 mb-4">Liens rapides</h4>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Accueil</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>À propos de nous</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> </a>
                     <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Nous contacter</a>
                 </div>
             </div>

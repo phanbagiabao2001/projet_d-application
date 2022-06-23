@@ -87,7 +87,7 @@ class Header extends HTMLElement {
                       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                           <div class="navbar-nav mr-auto py-0">
                               <a href="accueil.html" class="nav-item nav-link active">Accueil</a>
-                              <a href="discussion.html" class="nav-item nav-link">Discussion</a>
+                              <a href="http://localhost/projet_d-application/posts_add.php" class="nav-item nav-link">Discussion</a>
                               <a href="http://localhost/projet_d-application/contact.php" class="nav-item nav-link">Nous contacter</a>
                           </div>
                           <a href="connexion.html" class="btn btn-primary mr-3 d-none d-lg-block"><b>Connexion</b></a>
@@ -140,7 +140,7 @@ Ses habitants sont appelés les Berruyers.</p>
                 <h4 class="font-weight-semi-bold text-primary1 mb-4">Liens rapides</h4>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" href="accueil.html"><i class="fa fa-angle-right mr-2"></i>Accueil</a>
-                    <a class="text-white mb-2" href="discussion.html"><i class="fa fa-angle-right mr-2"></i>Discussion</a>
+                    <a class="text-white mb-2" href="http://localhost/projet_d-application/posts_add.php"><i class="fa fa-angle-right mr-2"></i>Discussion</a>
                     <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Nous contacter</a>
                 </div>
             </div>
