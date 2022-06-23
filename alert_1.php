@@ -1,11 +1,10 @@
 <?php
 	session_start();
-	if (!isset($_SESSION['user'])) {
+	if ( !isset($_SESSION['user']) and !isset($_SESSION['admin']) )   {
 		header("location:accueil.html");
 	}
 
 ?>
-
 <!doctype html>
 <html>
 	<head>
@@ -114,174 +113,12 @@
     <!-- Header End -->
 
     
-	<div class="colorlib-loader"></div>
-	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-		</nav>
-		<aside id="colorlib-hero">
-			<div class="flexslider">
-				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<h1>Bienvenue à Bourges</h1>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<h1>Bienvenue à INSA Centre Val de Loire (Bourges)</h1>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluids">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
-				   				<div class="slider-text-inner text-center">
-                                    <h1>Ville de Bourges</h1>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_4.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
-				   				<div class="slider-text-inner text-center">
-                                    <h1>Perdu à Bourges</h1>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>	   	
-			  	</ul>
-		  	</div>
-		</aside>
-    	
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Date Picker -->
-	<script src="js/bootstrap-datepicker.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
+<h2 style="text-align:center"></h2>
+        <h3 style="text-align:center" >Vous devez faire connexion avant de poster!</h3>
+        <h4 style="text-align:center" ><a href="http://localhost/projet_d-application/posts_add.php"> Revenir </a></h4>
+        
 
-    <h2 class="scintillement" style="text-align:center">Découvrons Bourges</h2>
-    <div class="row">
-        <div class="column">
-          <a href="#">
-            <div class="container1">
-                <a href="scolarite.html"> 
-                    <img src="images/scolarite.png" class="image">
-                    <div class="overlay1">
-                        <div class="text">Scolarité</div>
-                    </div>
-                </a>
-              </div>
-          </a>
-        </div>
-
-        <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="procedures_administratives.html"> 
-                      <img src="images/administrations.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Procédures administratives</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-          </div>
-
-          <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="logement.html"> 
-                      <img src="images/logement.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Logement</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-            </div>
-        <div class="row">
-          <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="transportation.html"> 
-                      <img src="images/transport.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Transportation</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-          </div>
-       
-
-        <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="association_eleves.html"> 
-                      <img src="images/association.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Association élèves</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-          </div>
-
-          <div class="column">
-            <a href="#">
-              <div class="container1">
-                  <a href="loisirs.html"> 
-                      <img src="images/loisir.png" class="image">
-                      <div class="overlay1">
-                          <div class="text">Loisirs</div>
-                      </div>
-                  </a>
-                </div>
-            </a>
-          </div>
-        </div>
-    </div>
-    </div>
+          
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
@@ -338,3 +175,8 @@ Ses habitants sont appelés les Berruyers.</p>
     </body> 
 
 </html>
+
+
+
+
+
