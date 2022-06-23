@@ -93,7 +93,11 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="accueil.html" class="nav-item nav-link active">Accueil</a>
+<<<<<<< HEAD
                             <a href="about.html" class="nav-item nav-link">À propos de nous</a>
+=======
+                              
+>>>>>>> f6899127ebcc0827e09de86d1303f14096dc9260
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                 <div class="dropdown-menu rounded-0 m-0">

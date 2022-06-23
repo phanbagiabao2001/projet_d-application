@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Ouvrir un compte</title>
 </head>
+<<<<<<< HEAD
 <body style="background-image: url(../images/img_bg_2.jpg)" >
     <h3 class="text-center"> Ouvrir un compte </h3>
     
@@ -22,10 +23,19 @@
                 }
             ?>
         </p>
+=======
+<body  style="background-image: url(../images/bg.jpg); background-size: cover;background-repeat:no-repeat; height:100vh; " >
+    <h3 class="text-center"> Ouvrir un compte </h3>
+    
+    <div id="wrapper">
+        
+
+>>>>>>> f6899127ebcc0827e09de86d1303f14096dc9260
         <div class="container">  
             <div class = "row justify-content-around ">
                 <form action="register_submit.php" class="col-md-auto bg-light p-3 "  method = "POST">
                 <table>
+<<<<<<< HEAD
                     <tr>
                         <!-- <td>Nom</td> -->
                         <td><input type="text" name="Nom" placeholder="Nom" ></td>
@@ -69,6 +79,44 @@
                         <!-- <td>Nationalité</td> -->
                         <td><input type="text" name="nal" placeholder="Nationalité" ></td>
                     </tr>
+=======
+                Sexe         
+                    <input name="gender" type="radio" value="Masculin" /> Masculin
+                    <input name="gender" type="radio" value="Féminin" /> Féminin
+                    <input name="gender" type="radio" value="Autre" /> Autre
+                    <div class="mb-3">
+                        <label for="login">Nom</label>
+                        <input type="text"  class="form-control" name="Nom" placeholder="Nom" >
+                    </div>
+                   <div class="mb-3">
+                        <label for="login">Prénom</label>
+                        <input type="text"  class="form-control" name="prenom" placeholder="Prénom">
+                   </div>
+                   
+               
+                    <div class="mb-3">
+                        <label for="login">Utilisateur</label>
+                        <input type="text"  class="form-control" name="username" placeholder="Nom d'utilisateur">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="login">Mot de passe</label>
+                       <input type="password"  class="form-control" name="pass1" placeholder="Mot de passe" >
+
+                    </div class="mb-3">
+                        <label for="login">Confirmation de mot de passe</label>
+                        <input type="password"  class="form-control" name="pass2" placeholder="Confirmation de mot de passe" >
+                    <div>
+
+                    <div class="mb-3">
+                        <label for="login">Email</label>
+                        <input type="text"  class="form-control" name="email" placeholder="Email" > 
+                    </div>
+                    <div class="mb-3">
+                        <label for="login">Nationalité</label>
+                        <input type="text"  class="form-control" name="nal" placeholder="Nationalité" >
+                    </div>                
+>>>>>>> f6899127ebcc0827e09de86d1303f14096dc9260
                 
                     <tr>
                         <td colspan = "2">
@@ -78,6 +126,17 @@
                     </tr>
                 </table>
                 </form>
+<<<<<<< HEAD
+=======
+                <h2 class="text-center text-danger text-folder " >           
+                 <?php
+                if (  isset($_SESSION["alert"])   ) {
+                    echo $_SESSION["alert"];
+                    session_unset();
+                }
+                ?>
+                </h2>
+>>>>>>> f6899127ebcc0827e09de86d1303f14096dc9260
             </div>
         </div>
 
