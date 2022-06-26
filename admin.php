@@ -243,10 +243,10 @@
           <div class="column">
             <a href="#">
               <div class="container1">
-                  <a href="transportation.html"> 
+                  <a href="transport.html"> 
                       <img src="images/transport.png" class="image">
                       <div class="overlay1">
-                          <div class="text">Transportation</div>
+                          <div class="text">Transport</div>
                       </div>
                   </a>
                 </div>
